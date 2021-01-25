@@ -49,8 +49,28 @@
 
 body {
     font-family: var(--font);
-    color: var(--text-alt);
+    color: var(--text);
     background: var(--bg);
+}
+
+.off-canvas-content {
+    background-color: var(--background);
+}
+
+.callout.primary {
+    background-color: var(--text-alt);
+}
+
+.title-bar {
+    text-shadow: 0.2rem 0.2rem 0.8rem var(--main);
+}
+
+.row {
+    background: var(--bg);
+}
+
+br {
+    background: var(--main);
 }
 
 /* Links */
