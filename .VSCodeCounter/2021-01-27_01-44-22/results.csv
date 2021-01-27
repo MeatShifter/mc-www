@@ -1,0 +1,13 @@
+"filename", "language", "Markdown", "HTML", "JSON with Comments", "JavaScript", "CSS", "SCSS", "comment", "blank", "total"
+"c:\Users\meats\gitrepos\mc-www\README.md", "Markdown", 3, 0, 0, 0, 0, 0, 0, 3, 6
+"c:\Users\meats\gitrepos\mc-www\css\main.css", "CSS", 0, 0, 0, 0, 145, 0, 14, 35, 194
+"c:\Users\meats\gitrepos\mc-www\css\palette.css", "CSS", 0, 0, 0, 0, 20, 0, 2, 1, 23
+"c:\Users\meats\gitrepos\mc-www\css\palette.scss", "SCSS", 0, 0, 0, 0, 0, 39, 5, 4, 48
+"c:\Users\meats\gitrepos\mc-www\index.html", "HTML", 0, 59, 0, 0, 0, 0, 6, 7, 72
+"c:\Users\meats\gitrepos\mc-www\js\all.js", "JavaScript", 0, 0, 0, 3881, 0, 0, 61, 372, 4314
+"c:\Users\meats\gitrepos\mc-www\js\html2canvas.js", "JavaScript", 0, 0, 0, 6671, 0, 0, 266, 107, 7044
+"c:\Users\meats\gitrepos\mc-www\js\magicpuddle.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\meats\gitrepos\mc-www\js\modal.js", "JavaScript", 0, 0, 0, 13, 0, 0, 4, 3, 20
+"c:\Users\meats\gitrepos\mc-www\mc-www.code-workspace", "JSON with Comments", 0, 0, 8, 0, 0, 0, 0, 0, 8
+"c:\Users\meats\gitrepos\mc-www\portfolio.html", "HTML", 0, 129, 0, 0, 0, 0, 3, 10, 142
+"Total", "-", 3, 188, 8, 10565, 165, 39, 361, 543, 11872

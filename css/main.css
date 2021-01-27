@@ -76,7 +76,7 @@
 .menu-nav li a:visited {
     background-color: var(--bg-alt);
     color: var(--link);
-    border: 2px solid var(--visited));
+    border: 2px solid var(--visited);
     padding: 0.5rem 0.5rem;
     text-align: center;
     text-decoration: none;
