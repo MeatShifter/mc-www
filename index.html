@@ -1,72 +1,104 @@
 <!DOCTYPE html>
-<html class="scrollbar no-js" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Martin Cinotti</title>
-    <meta name="description" content="Portfolio for mCinotti">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
+  <!-- Basic Needs -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <!-- MagicPuddle CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Page Name -->
+  <title>Martin Cinotti</title>
 </head>
 
 <body>
-    <header id="home">
-        <div class="navbar">
-            <ul class="menu-nav">
-                <li class="button"><a href="#">Home</a></li>
-                <li><a href="#portfolio">Work</a></li>
-                <li><a href="#">Social</a></li>
-            </ul>
-        </div>
-    </header>
 
-    <div class="column">
-        <h5>Martin Cinotti</h5>
-        <ul>
-            <li><a href="https://www.merriam-webster.com/dictionary/webmaster">Web Master</a></li>
-            <li><a
-                    href="https://en.wikipedia.org/wiki/System_administrator#:~:text=A%20system%20administrator%2C%20or%20sysadmin,user%20computers%2C%20such%20as%20servers.">
-                    Systems Administrator</a></li>
-            <li><a href="https://www.glassdoor.com/Job-Descriptions/Computer-Technician.htm">Lead Computer Repair
-                    Technician</a></li>
-            <li><a href="https://www.indeed.com/hire/job-description/customer-service-representative">Tier I Customer
-                    Service Representative</a></li>
-        </ul>
-        <div class="code"><code>poop lord  crap code example</code>
+  <header id="home">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a href="#home" class="nav-link active"><i class="fas fa-home"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="https://mcinotti.netlify.app" class="nav-link"><i class="far fa-file"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link"><i class="far fa-folder-open"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">MP</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://magicpuddle.netlify.app">MP-www</a>
+          <a class="dropdown-item" href="https://magocpuddle.netlify.app/mpos">MPOS</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://magocpuddle.netlify.app/wiki">MPWiki</a>
         </div>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="home" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
     </div>
-    <main id="main">
-        <div class="container">
-            <div class="content">
+  </header>
 
-            </div>
+  <main id='main-content'>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+      <div <div class="card">
+        <img class="card-img-top" data-src="holder.js/100x180/?text=Image cap" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Martin Cinotti</h4>
+          <p class="card-text">Full Stack Developer</p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+  </main>
 
-        </div>
-    </main>
-    <footer class="footer">
-        <div id="badges" class="badges">
-            <img src="https://api.netlify.com/api/v1/badges/0e142e16-d740-4ee3-bc3f-e1f00d28d1e9/deploy-status"
-                alt="netlify deploy badge">
-            <!-- 100 days of code L/R-->
-            <a href="https://www.software.com/100-days-of-code"><img
-                    src="https://www.software.com/badges/100-days-of-code"></a>
-            <a href="https://www.100daysofcode.com"><img
-                    src="https://img.shields.io/static/v1?label=Challenge&amp;labelColor=384357&amp;message=100%20Days%20of%20Code&amp;color=00b4ee&amp;style=for-the-badge&amp;link=https://www.100daysofcode.com"></a>
-        </div>
-        <div class="credits">
-            <p>Copyright © 2021 | Martin Cinotti | All Rights Reserved</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <!-- Async -->
-    <script src="js/modal.js" async defer></script>
-    <!-- <script src="js/MagikPuddle.js"></script> -->
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/64776ffc13.js" crossorigin="anonymous"></script>
-    <!-- canvas -->
-    <script src="js/html2canvas.js"></script>
+  <footer class="footer">
+    <div id="badges" class="badges">
+      <!-- Netlify Build Status-->
+      <img src="https://api.netlify.com/api/v1/badges/0e142e16-d740-4ee3-bc3f-e1f00d28d1e9/deploy-status"
+        alt="netlify deploy badge">
+      <!-- 100 days of code L/R-->
+      <a href="https://www.software.com/100-days-of-code"><img
+          src="https://www.software.com/badges/100-days-of-code"></a>
+      <a href="https://www.100daysofcode.com"><img
+          src="https://img.shields.io/static/v1?label=Challenge&amp;labelColor=384357&amp;message=100%20Days%20of%20Code&amp;color=00b4ee&amp;style=for-the-badge&amp;link=https://www.100daysofcode.com"></a>
+    </div>
+    <div class="credits">
+      <p>Copyright © 2021 | Martin Cinotti | All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- Script section -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script>
+    $('#navId a').click(e => {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+  </script>
 </body>
+
 
 </html>
