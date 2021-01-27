@@ -1,0 +1,23 @@
+/* CSS HEX */
+--rich-black-fogra-29: #04151fff;
+--dark-jungle-green: #0e282bff;
+--rich-black: #183a37ff;
+--artichoke: #848872ff;
+--wheat: #efd6acff;
+--middle-yellow-red: #e5b381ff;
+--persian-orange: #da9056ff;
+--mahogany: #c44900ff;
+--kobe: #84371aff;
+--dark-purple: #432534ff;
+
+/* CSS HSL */
+--rich-black-fogra-29: hsla(202, 77%, 7%, 1);
+--dark-jungle-green: hsla(186, 51%, 11%, 1);
+--rich-black: hsla(175, 41%, 16%, 1);
+--artichoke: hsla(71, 9%, 49%, 1);
+--wheat: hsla(38, 68%, 81%, 1);
+--middle-yellow-red: hsla(30, 66%, 70%, 1);
+--persian-orange: hsla(26, 64%, 60%, 1);
+--mahogany: hsla(22, 100%, 38%, 1);
+--kobe: hsla(16, 67%, 31%, 1);
+--dark-purple: hsla(330, 29%, 20%, 1);

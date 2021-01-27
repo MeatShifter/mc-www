@@ -20,38 +20,103 @@
     --main: hsl(195, 83%, 38%);
     --main-alt: hsl(180, 75%, 20%);
 
-    --accent: ;
-    --accent-alt: ;
+    --accent: hsl(195, 80%, 50%);
+    --accent-alt: hsl(180, 45%, 50%);
 
     --code: hsl(165, 100%, 50%);
     --code-bg: hsl(0, 5%, 45%);
 
     --error: hsl(346, 84%, 61%);
 
+    --button: hsl(var(--text));
+    --button-bg: var(--main-alt);
+
+    --link: var(--accent-alt);
+    --hover: var(--error);
+    --visited: var(--accent-alt);
+    --active: var(--accent);
+
+    --select-text: var(--text-alt);
+    --select-bg: var(--accent-alt);
+
     background-color: var(--bg);
     color: var(--text);
 
 }
 
+
+
+::selection {
+    color: var(--select-text);
+    background: var(--select-bg);
+}
+
+.navbar {
+    background: var(--bg);
+}
+
+.menu-nav li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: var(--accent-alt);
+    padding: 0.2rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.menu-nav.button {
+    background-color: var(--button-bg);
+    color: var(--button);
+}
+
+.menu-nav li a:link,
+.menu-nav li a:visited {
+    background-color: var(--bg-alt);
+    color: var(--link);
+    border: 2px solid var(--visited));
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.menu-nav li a:hover,
+.menu-nav li a:active {
+    background-color: var(--active);
+    color: var(--text-alt);
+}
+
+.column {
+    display: inline-block;
+    align-content: left;
+    width: 10%;
+    height: auto;
+}
+
+.badges img {
+    width: auto;
+    height: 1.2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.footer {
+    font-size: 60%;
+    box-align: center;
+}
+
 /* Links */
-
-.scrollbar {
-    overflow-y: scroll;
-    /* Add the ability to scroll */
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.scrollbar::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.scrollbar {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
 
 h1,
 h2,
@@ -72,10 +137,25 @@ code {
     border-color: (--main);
     background-color: var(--code-bg);
     color: var(--code);
+    padding: 0.1rem 0.1rem;
 }
 
-.menu-nav li {
-    list-style-type: none;
+.scrollbar {
+    overflow-y: scroll;
+    /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 /* Larger than mobile */
