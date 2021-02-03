@@ -1,142 +1,131 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <title>Martin Cinotti | Portfolio</title>
-  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-  <link rel="stylesheet" type="text/css" href="css/root.css">
+  <!-- Basic Needs -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <!-- MagicPuddle CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="text/javascript">
+    $('#navId a').click(e => {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+  </script>
+  <!-- Page Name -->
+  <title>Martin Cinotti</title>
 </head>
 
 <body>
-
-  <div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-
-      <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
-        <div class="row column">
-          <br>
-          <img class="thumbnail" src="https://mcinotti.netlify.app/mc-avatar.png" alt="avatar">
-          <h5>Martin Cinotti</h5>
-          <ul>
-            <li><a href="https://www.merriam-webster.com/dictionary/webmaster">Web Master</a></li>
-            <li>Systems Administrator</li>
-            <li>Lead Computer Repair Specialist</li>
-            <li>Tier I Customer Service Representative</li>
-          </ul>
+  <header id="home">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs justify-content-center nav-fill">
+      <li class="nav-item">
+        <a href="index.html#home"><i class="fas fa-home"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link"><i class="far fa-file"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="portfolio.html" class="nav-link active"><i class="far fa-folder-open"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Magrathea</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://magicpuddle.netlify.app">MagicPuddle</a>
+          <a class="dropdown-item" href="https://magicpuddle.netlify.app/wiki">MP Wiki</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://magicpuddle.netlify.app/mpos">MPOS</a>
         </div>
+      </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="home" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab2Id" id="main" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab3Id" id="mp" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <div class="row">
+        <h1>MCinotti | Portfolio</h1>
+        <p class="lead">Applied knowledge and skills.</p>
       </div>
-
-      <div class="off-canvas-content" data-off-canvas-content>
-        <div class="title-bar hide-for-large">
-          <div class="title-bar-left">
-            <button class="menu-icon" type="button" data-open="my-info"></button>
-            <span class="title-bar-title">Martin Cinotti</span>
-          </div>
+      <div class="row" <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="column-sm-1">
+          <a href="https://magicpuddle.netlify.app"> <img class="thumbnail"
+              src="https://magicpuddle.netlify.app/assets/img/mp-thumb.png"></a>
+          <h5>MagicPuddle</h5>
         </div>
-        <div class="callout primary">
-          <div class="row column">
-            <h1>Portfolio | Martin Cinotti</h1>
-            <p class="lead">A showcase of applied knowledge and skills.</p>
-          </div>
+        <div class="column-sm-1">
+          <a href="https://magicpuddle.netlify.app"> <img class="thumbnail"
+              src="https://magicpuddle.netlify.app/assets/img/mp-thumb.png"></a>
+          <h5>MeatShifter</h5>
         </div>
-        <div class="row small-up-2 medium-up-3 large-up-4">
-          <div class="column">
-            <a href="https://magicpuddle.netlify.app"> <img class="thumbnail"
-                src="https://magicpuddle.netlify.app/img/mp-thumb.png"></a>
-            <h5>MagicPuddle</h5>
-          </div>
-          <div class="column">
-            <a href="https://mcinotti.netlify.app">
-              <img class="thumbnail" src="https://placehold.it/550x550"></a>
-            <h5>My Site</h5>
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
+        <div class="column-sm-1">
+          <a href="https://magicpuddle.netlify.app"> <img class="thumbnail"
+              src="https://magicpuddle.netlify.app/assets/img/mp-thumb.png"></a>
+          <h5>MeatShifter</h5>
         </div>
-
-        <hr>
-
-        <div class="row">
-          <div class="medium-6 columns">
-            <h3>Contact Me</h3>
-            <p>To get in touch with me, please utilize the links bellow and/or the email form to the right.</p>
-            <ul class="menu">
-              <li><a href="https://facebook.com/mcinotti"><i class="fab fa-facebook-square"></i></a></li>
-              <li><a href="https://twitter.com/mcinotti"><i class="fab fa-twitter-square"></i></a></li>
-              <li><a href="https://discord.com/mcinotti"><i class="fab fa-discord"></i></a></li>
-              <li><a href="https://youtube.com/mcinotti"><i class="fab fa-youtube-square"></i></a></li>
-            </ul>
-          </div>
-          <div class="medium-6 columns">
-            <label>Name
-              <input type="text" placeholder="Name">
-            </label>
-            <label>Email
-              <input type="text" placeholder="Email">
-            </label>
-            <label>
-              Message
-              <textarea placeholder="holla at a designerd"></textarea>
-            </label>
-            <input type="submit" class="button expanded" value="Submit">
-          </div>
+        <div class="column-sm-1">
+          <a href="https://magicpuddle.netlify.app"> <img class="thumbnail"
+              src="https://magicpuddle.netlify.app/assets/img/mp-thumb.png"></a>
+          <h5>MeatShifter</h5>
+        </div>
+        <div class="column-sm-1">
+          <a href="https://magicpuddle.netlify.app"> <img class="thumbnail"
+              src="https://magicpuddle.netlify.app/assets/img/mp-thumb.png"></a>
+          <h5>MeatShifter</h5>
+        </div>
+        <div class="column-sm-1">
+          <a href="https://magicpuddle.netlify.app"> <img class="thumbnail"
+              src="https://magicpuddle.netlify.app/assets/img/mp-thumb.png"></a>
+          <h5>MeatShifter</h5>
         </div>
       </div>
     </div>
-  </div>
-  <!------------ Scripts ------------>
+  </main>
 
+  <footer class="footer">
+    <div id="badges" class="badges">
+      <!-- Netlify Build Status-->
+      <img src="https://api.netlify.com/api/v1/badges/0e142e16-d740-4ee3-bc3f-e1f00d28d1e9/deploy-status"
+        alt="netlify deploy badge">
+      <!-- 100 days of code L/R-->
+      <a href="https://www.software.com/100-days-of-code"><img
+          src="https://www.software.com/badges/100-days-of-code"></a>
+      <a href="https://www.100daysofcode.com"><img
+          src="https://img.shields.io/static/v1?label=Challenge&amp;labelColor=384357&amp;message=100%20Days%20of%20Code&amp;color=00b4ee&amp;style=for-the-badge&amp;link=https://www.100daysofcode.com"></a>
+    </div>
+    <div class="credits">
+      <p>Copyright © 2021 | Martin Cinotti | All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- Scripts -->
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/64776ffc13.js" crossorigin="anonymous"></script>
-
-  <!-- Foundation Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/nf-icons@0.1.0/dist/index.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/combine/npm/nf-icons@0.1.0,npm/svelte-nerdfonts@1.0.3,npm/nerdfont-icons@0.0.2"></script>
 </body>
 
 </html>

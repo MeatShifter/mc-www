@@ -11,63 +11,111 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
   <!-- MagicPuddle CSS -->
   <link rel="stylesheet" href="assets/css/main.css">
+  <script type="text/javascript">
+    $('#navId a').click(e => {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+  </script>
   <!-- Page Name -->
   <title>Martin Cinotti</title>
 </head>
 
 <body>
-
   <header id="home">
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs justify-content-center nav-fill">
       <li class="nav-item">
         <a href="#home" class="nav-link active"><i class="fas fa-home"></i></a>
       </li>
       <li class="nav-item">
-        <a href="https://mcinotti.netlify.app" class="nav-link"><i class="far fa-file"></i></a>
+        <a href="" class="nav-link"><i class="far fa-file"></i></a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link"><i class="far fa-folder-open"></i></a>
+        <a href="portfolio.html" class="nav-link"><i class="far fa-folder-open"></i></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false">MP</a>
+          aria-expanded="false">Magrathea</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="https://magicpuddle.netlify.app">MP-www</a>
-          <a class="dropdown-item" href="https://magocpuddle.netlify.app/mpos">MPOS</a>
+          <a class="dropdown-item" href="https://magicpuddle.netlify.app">MagicPuddle</a>
+          <a class="dropdown-item" href="https://magicpuddle.netlify.app/wiki">MP Wiki</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="https://magocpuddle.netlify.app/wiki">MPWiki</a>
+          <a class="dropdown-item" href="https://magicpuddle.netlify.app/mpos">MPOS</a>
         </div>
       </li>
     </ul>
-
     <!-- Tab panes -->
     <div class="tab-content">
       <div class="tab-pane fade show active" id="home" role="tabpanel"></div>
-      <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-      <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab2Id" id="main" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab3Id" id="mp" role="tabpanel"></div>
       <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
       <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
     </div>
   </header>
 
-  <main id='main-content'>
-    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-      <div <div class="card">
-        <img class="card-img-top" data-src="holder.js/100x180/?text=Image cap" alt="Card image cap">
-        <div class="card-body">
-          <h4 class="card-title">Martin Cinotti</h4>
-          <p class="card-text">Full Stack Developer</p>
+  <main id="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <!-- -->
+          <div class="card">
+            <img class="card-img-top" src="assets/img/bar.png" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Martin Cinotti</h3>
+              <p class="card-text">System Administrator</p>
+              <p class="card-text"><a href="https://www.freecodecamp.org/martinc"><i class="fab fa-free-code-camp"> </i>
+                  Full Stack Developer</a></p>
+            </div>
+            <div class="card-body">
+              <p><i class="far fa-paper-plane"></i> : <a href="mailto:martincinotti@gmail.com">Send an email</a></p>
+              <p><i class="fa fa-phone"></i> : <a href="tel:407-308-2809">(407)-308-2809</a></p>
+              <a href="#" class="card-link"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="card-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="card-link"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="card-link"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+          <div class="card">
+            <div class="card-body">
+              <h4>OS:</h4>
+              <ul class="os">
+                <li><i class="fab fa-windows"> </i> Windows</li>
+                <li><i class="fab fa-apple"> </i> Apple</li>
+                <li><i class="fab fa-freebsd"> </i> FreeBSD</li>
+                <li><i class="fab fa-android"> </i> Android</li>
+                <li><i class="fab fa-linux"> </i> Linux</li>
+              </ul>
+
+              <h4>Frame:</h4>
+              <ul class="list">
+                <li><i class="fab fa-bootstrap"> BootStrap</i></li>
+                <li><i class="fa fa-foundation"></i> Foundation</li>
+                <li><i class="nf-dev-django"></i> Django</li>
+                <li><i class="fab fa-wordpress"></i> WordPress</li>
+                <li><i class="fab fa-drupal"></i> Drupal</li>
+              </ul>
+
+              <h4>Lang:</h4>
+              <ul class="lang">
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3"></i> CSS</li>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fab fa-node-js"></i> Node.js</li>
+                <li><i class="fab fa-php"></i> php</li>
+                <li><i class="fab fa-lua"></i> lua</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -92,13 +140,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-  <script>
-    $('#navId a').click(e => {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/nf-icons@0.1.0/dist/index.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/combine/npm/nf-icons@0.1.0,npm/svelte-nerdfonts@1.0.3,npm/nerdfont-icons@0.0.2"></script>
 </body>
-
 
 </html>
