@@ -6,13 +6,18 @@ h5,
 h6 {
   font-family: var(--font-h1);
   text-shadow: 0.1rem 0.1rem 0.8rem var(--main);
+  padding: 2rem auto;
+  margin: 2rem auto;
 }
 
 img {
   object-fit: cover;
 }
-
+.video {
+  object-fit: cover;
+}
 code {
+  text-align: left;
   border-width: 3px;
   border-color: var(--main);
   background-color: var(--code-bg);

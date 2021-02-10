@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
@@ -7,8 +6,8 @@
   --font: "Raleway", "Roboto", "Orbitron", "Terminus", "Font Awesome Brands",
     sans-serif;
   --font-nav: "Permanent Marker", "Orbitron", "Font Awesome Brands", sans-serif;
-  --font-h: "Permanent Marker", "Orbitron", "Raleway",
-    "Roboto" "Font Awesome Brands", sans-serif;
+  --font-h: "Permanent Marker", "Orbitron", "Raleway", "Roboto",
+    "Font Awesome Brands", sans-serif;
   --font-code: "Orbitron", "Terminus", "Font Awesome Brands", "monospace";
 
   /* define colors */
@@ -45,46 +44,81 @@
   background-color: var(--bg2);
   color: var(--text);
 }
-.nav {
-  background-color: var(--bg);
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+a {
+  background: none;
+  color: var(--main);
 }
-.nav-link {
-  background-color: var(--main);
-  color: var(--bg);
+a:hover {
+  background: none;
+  color: var(--main-alt);
+  text-shadow: 1px 1px 3px var(--main);
+}
+*::selection {
+  border-radius: 2rem;
+  color: var(--select-text);
+  background: var(--select-bg);
+  border-radius: 2rem;
+}
+.nav-link:hover {
+  background-color: var(--bg2);
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
 .nav-link.hover {
   background-color: var(--bg2);
-  color: var(--main);
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
-
-.nav-link.active {
-  color: var(--main);
+.nav-link:active {
+  background-color: var(--bg2);
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+}
+.nav-link.active {
+  background-color: var(--bg);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .nav-tabs {
+  background-color: var(--bg);
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
 .nav-tabs li {
+  background-color: var(--bg);
   align-items: center;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.dropdown-toggle {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.dropdown-menu {
+  background-color: var(--bg2);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
+i {
+  margin: 3px;
+  padding: 3px;
+}
 #main-content {
-  padding-top: 3rem;
+  padding-top: 6rem;
   width: 100%;
   height: auto;
 }
 
 .about {
-  justify-content: right;
   background-color: var(--main-alt);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -108,13 +142,25 @@
   margin: 1rem 1rem auto;
 }
 .card {
+  display: block;
   border: 3px solid var(--main-alt);
   border-radius: 2rem;
   padding: 2rem;
   background-color: var(--bg);
 }
+.card-body a,
+.card-body h5 {
+  display: inline;
+}
 .card-img-top {
-  border-radius:  2rem;
+  border-radius: 0.6rem;
+  width: 100%;
+  height: auto;
+}
+.folio {
+  text-align: center;
+}
+.folio-thumb {
   width: 100%;
   height: auto;
 }
@@ -123,7 +169,7 @@
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   background-color: var(--text-alt);
-  border-top: 3px solid var(--bg-alt);
+  border-top: 3px solid var(--main-alt);
   position: fixed;
   width: 100%;
   bottom: -0.5rem;

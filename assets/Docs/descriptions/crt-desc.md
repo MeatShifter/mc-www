@@ -6,4 +6,4 @@ Computer technicians may hold an associate's or bachelor's degree in Information
 
 ___
 
-##### References: [Glass Door](https://www.glassdoor.com/Job-Descriptions/Computer-Technician.htm)
+##### Cite: [Glass Door](https://www.glassdoor.com/Job-Descriptions/Computer-Technician.htm)
